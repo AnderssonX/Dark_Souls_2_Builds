@@ -3,6 +3,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/homeLayout"
-    android:background="#2c3e50">
+    android:background="#263238">
 
 </RelativeLayout>
