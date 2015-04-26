@@ -55,6 +55,8 @@ public class FragmentPve extends Fragment {
         builds.add(new Build("Third Build", "description", 12, 15, 16, 23, 42, 12, 42, 12, 12, screenshot));
         builds.add(new Build("Fourth Build", "description", 12, 15, 16, 23, 42, 12, 42, 12, 12, screenshot));
         builds.add(new Build("Fifth Build", "description", 12, 15, 16, 23, 42, 12, 42, 12, 12, screenshot));
+
+        builds.get(0).setArmor("Chloranthy Ring, Stone Ring, Ring of Binding, Ring of Blades");
     }
 
     @Override
@@ -112,5 +114,9 @@ public class FragmentPve extends Fragment {
 
     public String getStatValues() {
         return builds.get(currentBuild).getStatValues();
+    }
+
+    public String getGear() {
+        return builds.get(currentBuild).getGear();
     }
 }

@@ -23,6 +23,9 @@ public class Build implements Serializable {
     int faith;
     String desc;
     Drawable screenshot;
+    String armor;
+    String weapons;
+    String notes;
 
     public Build(String name, String desc, int vig, int end, int vit, int att, int str, int dex, int ada, int intel, int faith, Drawable screenshot) {
         this.name = name;
@@ -67,5 +70,13 @@ public class Build implements Serializable {
     // Returns the build name in a string.
     public String getName() {
         return name;
+    }
+
+    // Sets armor, taking a string.
+    public void setArmor(String armor){
+        this.armor = armor;
+    }
+    public String getGear() {
+        return armor;
     }
 }

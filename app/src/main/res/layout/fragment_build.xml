@@ -4,10 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:textAlignment="center">
-<LinearLayout
+
+    <LinearLayout
     android:orientation="vertical"
-    android:layout_width="wrap_content"
+    android:layout_width="fill_parent"
     android:layout_height="wrap_content">
+
     <TextView
         android:id="@+id/tw_buildName"
         android:layout_width="fill_parent"
@@ -34,7 +36,47 @@
         android:textIsSelectable="false"
         android:textSize="16sp"
         android:textStyle="normal" />
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/tw_gearTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="Recommended gear"
+        android:textColor="#ffffffff"
+        android:textIsSelectable="false"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tw_Gear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="Gear list"
+        android:textColor="#ffffffff"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tw_statsTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Attribute stats"
+            android:textColor="#ffffffff"
+            android:textIsSelectable="false"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -51,7 +93,7 @@
             android:text="Stats"
             android:textColor="#ffffffff"
             android:textIsSelectable="false"
-            android:textSize="22sp" />
+            android:textSize="16sp" />
 
 
         <TextView
@@ -66,7 +108,7 @@
             android:text="Values"
             android:textColor="#ffffffff"
             android:textIsSelectable="false"
-            android:textSize="22sp" />
+            android:textSize="16sp" />
 
         </LinearLayout>
 </LinearLayout>

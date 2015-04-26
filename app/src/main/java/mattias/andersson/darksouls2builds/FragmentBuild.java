@@ -56,6 +56,16 @@ public class FragmentBuild extends Fragment {
         TextView tw_values = (TextView) v.findViewById(R.id.tw_values);
         tw_values.setText(pve.getStatValues());
         tw_values.startAnimation(AnimationUtils.loadAnimation(getActivity(), android.R.anim.slide_in_left));
+
+        TextView tw_gearTitle = (TextView) v.findViewById(R.id.tw_gearTitle);
+        tw_gearTitle.startAnimation(AnimationUtils.loadAnimation(getActivity(), android.R.anim.slide_in_left));
+
+        TextView tw_statsTitle = (TextView) v.findViewById(R.id.tw_statsTitle);
+        tw_statsTitle.startAnimation(AnimationUtils.loadAnimation(getActivity(), android.R.anim.slide_in_left));
+
+        TextView tw_gear = (TextView) v.findViewById(R.id.tw_Gear);
+        tw_gear.setText(pve.getGear());
+        tw_gear.startAnimation(AnimationUtils.loadAnimation(getActivity(), android.R.anim.slide_in_left));
         return v;
     }
 
