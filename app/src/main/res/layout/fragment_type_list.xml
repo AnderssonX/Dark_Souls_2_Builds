@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="mattias.andersson.darksouls2builds.FragmentTypeList">
+<ImageView android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="false"
+    android:src="@drawable/ds2buildslogo" />
+
+    <GridView
+        android:paddingTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="150dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:layout_below="@+id/imageViewLogo"
+        android:horizontalSpacing="10dp"
+
+        android:id="@+id/typesGridView"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+    <TextView android:id="@+id/textViewBottom"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_below="@+id/typesGridView"
+        android:text="choose build type"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:theme="@style/AppTheme"
+        android:visibility="visible"
+        android:textColor="#FFFF8D" />
+    </RelativeLayout>
+
