@@ -3,21 +3,29 @@
     android:layout_height="match_parent"
     tools:context="mattias.andersson.darksouls2builds.FragmentTypeList">
 <ImageView android:id="@+id/imageViewLogo"
-        android:layout_width="wrap_content"
+    android:layout_width="wrap_content"
     android:layout_centerHorizontal="true"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     android:layout_alignParentTop="true"
     android:layout_alignParentEnd="false"
     android:src="@drawable/ds2buildslogo" />
 
-    <GridView
+    <ImageView android:id="@+id/splash"
+       android:layout_below="@+id/imageViewLogo"
+       android:layout_width="wrap_content"
+       android:layout_height="300dp"
         android:paddingTop="18dp"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/splash" />
+
+    <GridView
+        android:paddingTop="9dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:columnWidth="150dp"
         android:numColumns="2"
         android:verticalSpacing="10dp"
-        android:layout_below="@+id/imageViewLogo"
+        android:layout_below="@+id/splash"
         android:horizontalSpacing="10dp"
 
         android:id="@+id/typesGridView"
