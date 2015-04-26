@@ -37,6 +37,6 @@
         android:textSize="32sp"
         android:theme="@style/AppTheme"
         android:visibility="visible"
-        android:textColor="#FFFF8D" />
+        android:textColor="#ffffffff" />
     </RelativeLayout>
 
